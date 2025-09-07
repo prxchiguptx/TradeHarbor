@@ -1,0 +1,35 @@
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.container {
+    position: relative;
+    z-index: 999;
+}
+
+.companybox {
+    font-family: new, sans-serif;
+    margin-top: 70px;
+    color: #98FB98;
+    width: 300px;
+    height: 60px;
+    padding:1px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #98FB98;
+    border-radius: 70px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 25px;
+}
+
+.companybox:hover {
+    animation: pop 0.5s ease;
+}

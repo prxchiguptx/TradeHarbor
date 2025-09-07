@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/analysisnew.css') }}">
+
+</head>
+<body>
+    
+    <h1><center>Evaluation Results {{ CName }}</center></h1>
+
+    <!-- Current Market Price -->
+    <center><h3>Current Market Price (CMP): ₹{{ current_market_price }}</h3></center>
+
+    <!-- Stock Price Chart -->
+    <img src="{{ url_for('static', filename='stock_price_chart.png') }}" alt="Stock Price Chart" width="1200" height="700">    
+
+        <!-- Numbers Section -->
+        <h2> NUMBERS</h2>
+        <div class="box-container">
+            <div class="data-boxes-container"> 
+                <div class="data-box">
+                    <h3>Market Cap</h3> 
+                    <h3> {{ market_cap }} crores </h3>
+                </div> 
+                <div class="data-box"> 
+                    <h3>Revenue Amount</h3>
+                    <h3>{{ revenue }} crores</h3>
+                </div>
+            </div>
+            <div class="data-boxes-container">        
+                <div class="data-box"> 
+                    <h3>Debt Amount</h3>
+                    <h3>{{ debt }} crores</h3>
+                </div>
+            </div>
+            <div class="data-boxes-container"> 
+                <div class="data-box"> 
+                    <h3>Profit Margin</h3>
+                    <h3>{{ profit_margin }} crores</h3>
+                </div> 
+                <div class="data-box"> 
+                    <h3>Return On Assets</h3>
+                    <h3>{{ roa }} crores</h3>
+                </div> 
+            </div>  
+        </div>
+        <!-- Evaluation Section -->
+        <h2> EVALUATION</h2>
+        
+        <div class="box-container">
+            <div class="data-boxes-container"> 
+
+                <div class="data-box"> 
+                    <h3>P/E Ratio Evaluation</h3><br>
+                    <h3> {{ peevaluation }} </h3>
+                </div> 
+                <div class="data-box"> 
+                    <h3>Revenue Evaluation</h3><br>
+                    <h3>{{ revenueevaluation }} </h3>
+                </div> 
+            </div>
+            <div class="data-boxes-container">
+                    <div class="data-box"> 
+                    <h3>Debt Evaluation</h3><br>
+                    <h3>{{ debtevaluation }} </h3>
+                </div> 
+            </div>
+            <div class="data-boxes-container">
+                    <div class="data-box"> 
+                    <h3>Profit Margin Evaluation</h3><br>
+                    <h3>{{ profitmarginevaluation }} </h3>
+                </div> 
+                <div class="data-box"> 
+                    <h3>Return On Assets Evaluation</h3><br>
+                    <h3>{{ roaevaluation }} </h3>
+                </div> 
+            </div>
+        </div>    
+        <!-- Overall Potential -->
+        
+        <h2><center>Overall Potential</center></h2>
+        <div class="data-boxes-container">
+            <div class="data-box">
+                <h3>{{ potential }}</h3>
+            </div>
+        </div>
+</body>
+</html>

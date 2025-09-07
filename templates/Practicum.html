@@ -1,0 +1,231 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>TradeHarbor</title>  
+
+    <!-- Link to the font CSS file --> 
+     <!-- Link to the font CSS file --> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fontnew.css') }}"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animation.css') }}"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/box.css') }}"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/companybox.css') }}">  
+
+
+
+
+    <!-- Your existing script tags -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script> 
+    <script src="{{ url_for('static', filename='js/animation.js') }}"></script> 
+    <script src="{{ url_for('static', filename='js/background.js') }}"></script>  
+
+
+
+</head> 
+
+  
+
+<body link="#98FB98" alink="#98FB98" vlink="#98FB98"> 
+
+  
+
+   <div class="background-container"></div>
+    <div class="content">
+
+        <h2 class="animated">INTRODUCTION</h2> 
+
+  
+
+        <!-- Replace subpoints with a paragraph on stock market --> 
+
+        <div class="intro-text-container"> 
+
+            <p class="intro-text animated"> 
+
+                Welcome to the captivating world of the stock market—a bustling hub where companies and investors engage in the exciting dance of buying and selling shares. Think of shares as your backstage pass to the inner workings of publicly listed companies. Whether you're an individual investor or part of a big-league institution, owning shares means you're not just along for the ride; you're a player with a stake in a company's success and a voice in its decisions. Now, let's take a stroll through terms like CMP, Face Value, Market Cap, and more. These are like puzzle pieces that, when put together, reveal the thrilling tapestry of the stock market—full of risks, rewards, and endless possibilities. So, buckle up as we dive into the vibrant world of investment, where every term tells a unique story in the grand spectacle of finance! Welcome aboard! 🚀 
+
+            </p> 
+
+        </div> 
+
+  
+
+        <!-- Add a line above the boxes for user interaction --> 
+
+        <div class="click-for-more"> 
+
+            <p>Click on the boxes to explore further details!</p> 
+
+        </div> 
+
+  
+
+        <!-- Add the data boxes below the introduction --> 
+
+        <div class="data-boxes-container"> 
+
+            <div class="data-box"> 
+                <a href="{{ url_for('CMP') }}">CMP</a> 
+            </div> 
+
+            <div class="data-box"> 
+
+                <a href="{{ url_for('TD') }}">TOTAL DEBT</a> 
+
+            </div> 
+
+            <div class="data-box"> 
+
+                <a href="{{ url_for('MC') }}">MARKET CAP</a> 
+
+            </div> 
+
+            <div class="data-box"> 
+
+                <a href="{{ url_for('NETPROFIT') }}">NET PROFIT</a> 
+
+            </div> 
+
+            <div class="data-box"> 
+
+                <a href="{{ url_for('TR') }}">TOTAL REVENUE</a> 
+
+            </div> 
+
+            <div class="data-box"> 
+
+                <a href="{{ url_for('RETURNONASSETS') }}">RETURN ON ASSETS</a> 
+
+            </div> 
+
+            <div class="data-box"> 
+
+                <a href="{{ url_for('DY') }}">DIVIDEND YIELD (%)</a> 
+
+            </div> 
+
+            <div class="data-box"> 
+
+                <a href="{{ url_for('SC') }}">SHARE CAPITAL</a> 
+
+            </div> 
+
+            <div class="data-box"> 
+
+                <a href="{{ url_for('NOS') }}">No. OF SHARES</a> 
+
+            </div> 
+
+            <div class="data-box"> 
+
+                <a href="{{ url_for('RnS') }}">RESERVE & SURPLUS</a> 
+
+            </div> 
+
+            <div class="data-box"> 
+
+                <a href="{{ url_for('FV') }}">FACE VALUE</a> 
+
+            </div> 
+
+            <div class="data-box"> 
+
+                <a href="{{ url_for('PTBV') }}">PRICE TO BOOK VALUE</a> 
+
+            </div> 
+
+            <div class="data-box"> 
+
+                <a href="{{ url_for('PBDTEBDTA') }}">PBDIT/EDBITA</a> 
+
+            </div> 
+
+            <div class="data-box"> 
+
+                <a href="{{ url_for('PBDITPS') }}">PBDIT PER SHARE</a> 
+
+            </div> 
+
+            <div class="data-box"> 
+
+                <a href="{{ url_for('BV') }}">BOOK VALUE</a> 
+
+            </div> 
+
+            <div class="data-box"> 
+
+                <a href="{{ url_for('NETPROFITPERSHARE') }}">NET PROFIT PER SHARE</a> 
+
+            </div> 
+
+            <div class="data-box"> 
+
+                <a href="{{ url_for('CR') }}">CURRENT RATIO</a> 
+
+            </div> 
+
+            <div class="data-box"> 
+
+                <a href="{{ url_for('DER') }}">DEBT EQUITY RATIO</a> 
+
+            </div> 
+
+            <div class="data-box"> 
+
+                <a href="{{ url_for('RETURNONEQUITY') }}">RETURN ON EQUITY(%)</a> 
+
+            </div> 
+
+            <div class="data-box"> 
+
+                <a href="{{ url_for('IPE') }}">INDUSTRY P/E</a> 
+
+            </div> 
+
+            <div class="data-box"> 
+
+                <a href="{{ url_for('INTERESTCOVERAGERATIO') }}">INTEREST COVERAGE RATIO</a> 
+
+            </div> 
+
+            <div class="data-box"> 
+
+                <a href="{{ url_for('DIVIDENDPAYOUTRATIO') }}">DIVIDEND PAYOUT RATIO</a> 
+
+            </div> 
+
+            <div class="data-box"> 
+
+                <a href="{{ url_for('WEEKHL') }}">52 WEEK H/L</a> 
+
+            </div> 
+
+            <div class="data-box"> 
+
+                <a href="{{ url_for('VOLATILITYRATIO') }}">VOLATILITY RATIO</a> 
+
+            </div> 
+
+            <div class="companybox"> 
+
+                <a href="{{ url_for('index') }}">COMPANY ANALYSIS</a> 
+
+            </div> 
+
+            <!-- Add other data boxes as needed --> 
+
+        </div> 
+
+    </div> 
+
+ 
+
+</div> 
+</body> 
+</html> 

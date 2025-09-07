@@ -1,0 +1,73 @@
+/* Your existing animation styles */
+
+.subpoints-container {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.subpoints-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.subpoint-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.subpoint {
+    text-align: center;
+    font-family: new, sans-serif;
+    font-size: 2.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    list-style-type: none;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.subpoint.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.intro-text {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease, transform 1s ease;
+    text-align: justify; /* Align text justified */
+    font-size: 1.5em; /* Adjust the font size for the introduction paragraph */
+    line-height: 2; /* Adjust line height for better readability */
+}
+
+.intro-text.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* New animation for the click-for-more line */
+.click-for-more {
+    animation-name: fadeIn;
+    animation-delay: 1s; /* Delay the animation to start after the introduction paragraph */
+}
+
+/* Updated animation for the introduction paragraph */
+.intro-text-container p.animated {
+    animation-name: fadeIn;
+    animation-delay: 0.5s; /* Adjusted delay for a smoother flow */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

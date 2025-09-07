@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Prices</title>
+</head>
+<body>
+    <h1>Stock Prices</h1>
+    <table border="1">
+        <tr>
+            <th>Time</th>
+            <th>Price</th>
+        </tr>
+        {% for price in prices %}
+        <tr>
+            <td>{{ loop.index }}</td> <!-- Display index of the loop, you can replace it with the actual time if needed -->
+            <td>{{ price }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.data-boxes-container {
+    display: flex;
+    flex-direction: column; /* Arrange boxes in a vertical line */
+    justify-content: center; /* Center the boxes horizontally */
+    align-items: center; /* Center the boxes vertically */
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.data-box {
+    width: 170px;
+    height: 50px;
+    border: 1px solid #98FB98;
+    margin: 15px;
+    margin-top: 1px; 
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #98FB98;
+    font-family: new, sans-serif;
+    font-size: 1.2em;
+    border-radius: 10px;
+    transition: transform 0.5s ease; 
+}
+
+.data-box:hover {
+    transform: scale(1.1);
+}
